@@ -1,0 +1,72 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+       "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>WebChangeWatchdog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Stand-alone application to check for changes in web pages." />
+<meta name="copyright" content="H. Ruprecht" />
+<meta name="license" content="GNU General Public License v2 or later"/>
+<link rel="shortcut icon" href="Drachenkopf.ico"/> 
+<!-- icon.png has white background, while Drachenkopf.ico is transparent 
+     to allow background colours -->
+</head>
+<body>
+<style>
+      html{font-size:10pt}
+      table { border-collapse:collapse; }
+      td {
+        border:none;
+        overflow:hidden;
+        vertical-align:top;
+	text-align: center;
+	font-size:15pt;
+	width: 1.2em;
+	height: 1.2em;
+	}
+      td.box {
+        border:1px solid;
+	border-collapse:collapse; 
+	}
+      td.kb {
+        border:1px solid;
+	border-collapse:collapse; 
+	background-color:#f0f0f0;
+	}
+      td.nobox { border-collapse:collapse; }
+      td.xbox {
+	border-collapse:collapse; 
+	font-size:25%;
+	}
+      td.result { border:2px ridge; }
+      td.xresult {
+	border-collapse:collapse; 
+	font-size:25%;
+	}
+      td.carry {
+        border:1px solid;
+	text-align: right;
+	border-collapse:collapse; 
+	font-size:75%;
+	height: 80%;
+	}
+      td.xcarry {
+        overflow:hidden;
+        vertical-align:top;
+	font-size:25%;
+	height: 80%;
+	}
+      button.b1 { font-size:180%; }
+      button.b2 { font-size:140%; }
+      button.b3 { font-size:100%; }
+    </style>
+<h1><span id="title"></span>
+<img id="icon" src="Drachenkopf.ico" height=43></h1>
+<span id="Total"></span><span id='debug'></span><br>
+<br><button class="b3" id="help">help</button>&nbsp;
+<br>
+<span id='dialog'></span>&nbsp;&nbsp;
+<script src="beep.js"></script>
+<script>beep();</script>
+</body>
+</html>

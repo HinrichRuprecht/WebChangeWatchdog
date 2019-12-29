@@ -1,0 +1,12 @@
+{
+  "name": "WebChangeWatchdog",
+  "description": "Stand-alone watchdog for changes in given web pages",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [],
+  "app": { 
+    "background": { "scripts": ["background.js"] }
+    },
+  "icons": { "16": "Drachenkopf-16.png", "128": "Drachenkopf-128.png" },
+  "minimum_chrome_version": "28"
+}
